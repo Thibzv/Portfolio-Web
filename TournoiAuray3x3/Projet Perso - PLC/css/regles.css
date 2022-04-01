@@ -1,0 +1,197 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin:0;
+	width: auto;
+	height: auto;
+	justify-content: center;
+	font-family: 'Verdana', sans-serif;
+}
+
+/*HEADER*/
+header {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #542583;
+	/*background-color: #8441cc;*/
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0.5rem;
+	z-index: 6;
+}
+
+header div {
+	margin:15px;
+}
+
+header .logo img {
+	height: 60px;
+	width: auto;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+}
+header .menu {
+	text-decoration: none;
+	color: white;
+	margin-left: 140px;
+}
+
+header .menu ul {
+	display: inline-flex;
+
+}
+header .menu ul li {
+	list-style: none;
+	margin-right: 60px;
+}
+
+header .menu .textmenu {
+	text-decoration: none;
+	color: white;
+	font-style: bold;
+	font-size: 20px;
+}
+
+header .menu .textmenu:hover {
+	color: #8441cc;
+	transition: 0.3s;
+}
+
+header .réseaux {
+	display: inline-flex;
+	list-style: none;
+	height: 60px;
+	margin-right: 10px;
+	align-items: center;
+}
+
+header .réseaux li {
+	margin-left: 30px;
+}
+header .réseaux li a i {
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+
+}
+/*IMAGES*/
+.photo img {
+	box-shadow: 0 0 1rem;
+}
+
+/*CONTENT*/
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	align-self: center;
+	background-color: white;
+	margin-top: 20px;
+}
+.content h1 {
+	color: #542583;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content h2 {
+	margin-left: 100px; 
+	color: #542583;
+}
+.content ul{
+	display: block;
+	width: 40%;
+	height: 150px;
+	background-color: #542583;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 20px;
+}
+.content ul li {
+	width: 95%;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.content .tableau {
+	display: block;
+	width: 42%;
+	height: 180px;
+	background-color: #542583;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+
+.content .tableau p {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+.content .tableau img {
+	width: 95%;
+	height: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	border: 1px solid white;
+}
+.content .jour2 {
+	margin-right: auto;
+	margin-left: auto;
+	width: 42%;
+	border: 1px solid #542583;
+	border-radius: 20px;
+
+}
+
+
+footer {
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: #542583;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	box-shadow: 0 0 0.5rem;
+	margin-top: 50px;
+
+}
+footer li {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	margin: 15px;
+	font-size: 16px;
+	margin-right: 150px;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+
+}
+
+
+table{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	width: 50%;
+}
+td {
+	border-width:1px;
+ 	border-style:solid; 
+	border-color:black;
+	width:50%;
+}
+.poules{
+	text-align: center;
+}

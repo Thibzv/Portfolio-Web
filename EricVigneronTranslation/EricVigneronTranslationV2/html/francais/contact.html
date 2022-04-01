@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eric Vigneron Translation - Contact</title>
+	<link rel="stylesheet" type="text/css" href="../../css/contact.css">
+</head>
+<body>
+    <header>
+            <img src="../../images/Monde.png" alt ="logo monde" height="20px">
+            <nav class="choix_langue">
+                <section class="langue">
+
+                    <h3 class="deroulant">Fr</h3>
+                        <ul>
+                            <li><a href="../anglais/contact_en.html" title="En">En</a></li>
+                        </ul>
+                </section>
+            </nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="accueil.html" title="Accueil">ACCUEIL</a></li>
+                    <li><a href="qui_suis_je.html" title="Qui suis-je ?" >QUI SUIS-JE ?</a></li>
+                    <li><a href="#" title="Contact" class="active">CONTACT</a></li>
+                    <li><a href="clients.html" title="Client" >CLIENTS</a></li>
+                </ul>
+            </div>
+    </header>
+    <div class="div_content">
+        <div class="contenu">	
+            <div class="text_contact">
+                <h1>Demande de devis gratuit</h1>
+                <p>Vous pouvez me contacter directement par email à <a href="mailto:eric.vigneron.pro@gmail.com" target = "_blank">eric.vigneron.pro@gmail.com</a> ou utiliser le formulaire ci-dessous pour me poser toute question ou demander un devis gratuit. Je vous recontacterai le plus rapidement possible.</p>
+                <p><span class ="note">Note</span> : Les informations fournies ne seront utilisées que pour vous contacter au sujet de votre demande.</p>
+                <p><span class="merci">Merci de fournir toute information que vous jugerez utile pour le traitement de votre demande !</span></p>
+            </div>
+            <div class="formulaire">
+                <form class="form_contact" action="" method="POST">
+                    <label for="form_nom">
+                    </label>
+                    <input type="text" id="form_nom"  placeholder="Nom*" class="champ" name='Nom' required>
+            
+                    <label for="form_email">
+                    </label>
+                    <input type="email" id="form_email" placeholder="Email*" class="champ" name='Email' required>
+            
+                    <label for="form_objet">
+                    </label>
+                    <input type="text" id="form_objet" class="champ"  placeholder="Objet" name='Objet'>
+            
+                    <label for="form_message">
+                    </label>
+                    <textarea id="form_message" placeholder="Message" name='Message'></textarea>
+            
+                    <input type="submit" class="bouton_send" value="ENVOYER">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="php">
+    <!--<?php
+    if(isset($_POST)&& !empty($_POST['Name']) &&! empty($_POST['Objet']) && !empty($_POST['Message'])){
+        extract($_POST);
+        $destinataire ='eric.vigneron.pro@gmail.com';
+        $expediteur =$Name.' <'.$Email_Address.'>';
+        $mail=mail($destinataire,$Objet,$Message,$expediteur .' : ericvigneronredaction.com');
+        if($mail)echo'Mail envoyé avec succés !!';else echo'Echec envoi de mail';
+    }else echo "Formulaire non soumis ou des champs ne sont pas remplis";
+    ?>-->
+</div>
+	<footer>
+		<p>©LATVN</p>
+		<div class="reseaux">
+			<ul>
+				<li><a href="mailto:eric.vigneron.pro@gmail.com" target="_blank" title="Eric Vigneron mail"><img src="../../images/Mail.png" alt="Mail" height="30px"></li>
+				<li><a href="https://www.facebook.com/EricVigneronTranslation" target="_blank" title="Eric Vigneron facebook"><img src="../../images/Facebook.png" alt="Facebook" height="30px"></li>
+				<li><a href="https://www.linkedin.com/in/eric-vigneron-5939a764" target="_blank" title="Eric Vigneron linkedin"><img src="../../images/Linkedin.png" alt="Linkedin" class="Linkedin"></li>
+				<li><a href="https://www.upwork.com/o/profiles/users/~01ca8c1013f41f523c/" target="_blank" title="Eric Vigneron upwork"><img src="../../images/Upwork.png" alt="Upwork" height="30px"></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

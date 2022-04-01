@@ -1,0 +1,331 @@
+/*BODY*/
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #d9d9d9;
+    box-shadow: 0 3px 0.5rem;
+}
+header img {
+    width: 2em;
+    height: auto;
+    margin-left: 1.2em;
+}
+
+header .choix_langue {
+    text-align: center;
+    margin-left: 0.1em;
+    z-index: 1000;
+}
+
+header .choix_langue .langue ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header .choix_langue .langue:hover ul {
+    display: block;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header .choix_langue h3,.choix_langue a {
+    display: inline-flex;
+    margin: 0;
+    padding: 0.4em 0.4em;
+    font-size: 1.8em;
+    color: black;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: auto;
+}
+
+header .choix_langue .langue:hover h3 {
+    color: black;
+    background-color: #d9d9d9;
+    text-decoration: ;
+}
+
+header .choix_langue a:hover {
+    color: blue;
+    background-color: #d9d9d9;
+    text-decoration: ;
+
+}
+/*MENU*/
+header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    z-index: 2;
+}
+header .menu ul {
+    display:inline-flex;
+    height: auto;
+    width: auto;
+    list-style: none;
+    font-size: 1.8em;
+}
+header .menu ul li {
+    height: auto;
+    width: auto;
+    margin: 1.2em;
+}
+header .menu ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+header .menu ul li .active{
+    color: #777777;
+}
+header .menu ul li a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+    color: blue;
+}s
+/*
+header .menu ul li .accueil a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 90%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 20%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 250ms;
+}
+header .menu ul li .accueil a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+*/
+
+
+/*CONTENT*/
+
+
+/*CONTENT*/
+
+.banniere {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.banniere .image {
+    width: 100%;
+    height: auto;
+    margin-top: 3px;
+    filter: blur(10px);
+    padding-bottom: 1%;
+}
+
+.banniere .titre {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #777777;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5%;
+}
+
+
+/*CLIENTS*/
+
+.contenu .Entreprise {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.contenu .Entreprise h2 {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-bottom: 2%;
+    color: #303030;
+}
+
+.contenu .texte_client p {
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: #d9d9d9;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: #222222;
+    white-space: pre-line;
+}
+
+.contenu .texte_client .avis_clients i {
+    font-size: 18px;
+    width: 90%;
+    color: #777777;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*FOOTER*/
+.contenu .text_prestations {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    background-color: #d9d9d9 ;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.contenu .text_prestations .contenu_prestation {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.contenu .text_prestations .contenu_prestation ul li {
+    margin-top: 2rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contenu .text_prestations .contenu_prestation .boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding:1.5rem;
+}
+
+.contenu .text_prestations .contenu_prestation .boutons a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: auto;
+    background-color: #777777;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.contenu .text_prestations .contenu_prestation .boutons a p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    color: #d9d9d9;
+}
+
+.contenu .text_prestations .contenu_prestation .boutons a:hover {
+    display: block;
+    width: 48%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: blue;
+}
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+footer .reseaux ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer .reseaux ul li {
+    margin-left: 5rem;
+}
+
+
+footer .reseaux ul li a img{
+    width: auto;
+    height: 2.2rem;
+}
+
+footer .reseaux ul li a .Linkedin{
+    align-items: center;
+    width: auto;
+    height:1.8rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    color: black;
+}

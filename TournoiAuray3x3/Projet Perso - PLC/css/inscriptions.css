@@ -1,0 +1,161 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../images/tournoiplc.jpeg);
+	margin:0;
+	width: auto;
+	height: auto;
+	justify-content: center;
+	font-family: 'Verdana', sans-serif;
+}
+
+/*HEADER*/
+header {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #542583;
+	/*background-color: #8441cc;*/
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0.5rem;
+	z-index: 6;
+}
+
+header div {
+	margin:15px;
+}
+
+header .logo img {
+	height: 60px;
+	width: auto;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+}
+header .menu {
+	text-decoration: none;
+	color: white;
+	margin-left: 140px;
+}
+
+header .menu ul {
+	display: inline-flex;
+
+}
+header .menu ul li {
+	list-style: none;
+	margin-right: 60px;
+}
+
+header .menu .textmenu {
+	text-decoration: none;
+	color: white;
+	font-style: bold;
+	font-size: 20px;
+}
+
+header .menu .textmenu:hover {
+	color: #8441cc;
+	transition: 0.3s;
+}
+
+header .réseaux {
+	display: inline-flex;
+	list-style: none;
+	height: 60px;
+	margin-right: 10px;
+	align-items: center;
+}
+
+header .réseaux li {
+	margin-left: 30px;
+}
+header .réseaux li a i {
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+
+}
+
+/*CONTENT*/
+.content  {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #542583;
+	margin-top: 80px;
+	border-radius: 20px;
+	box-shadow: 0 0 0.5rem;
+	align-self: center;
+}
+.content h1 {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	color: white;
+}
+
+.content form {
+	display: block;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	align-items: center;
+}
+
+
+.content form .inputs input {
+	height: 30px;
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+.content form .boutton {
+	display: inline-flex;
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+}
+.content form .boutton input {
+	display: block;
+	height: 30px;
+	width: 50%;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+
+/*FOOTER*/
+footer {
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: #542583;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	box-shadow: 0 0 0.5rem;
+	margin-top: 205px;
+
+}
+footer li {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	margin: 15px;
+	font-size: 16px;
+	margin-right: 150px;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+
+}

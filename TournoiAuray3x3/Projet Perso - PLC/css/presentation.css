@@ -1,0 +1,138 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin:0;
+	width: auto;
+	height: auto;
+	justify-content: center;
+	font-family: 'Verdana', sans-serif;
+}
+
+/*HEADER*/
+header {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #542583;
+	/*background-color: #8441cc;*/
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0.5rem;
+	z-index: 6;
+}
+
+header div {
+	margin:15px;
+}
+
+header .logo img {
+	height: 60px;
+	width: auto;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+}
+header .menu {
+	text-decoration: none;
+	color: white;
+	margin-left: 140px;
+}
+
+header .menu ul {
+	display: inline-flex;
+
+}
+header .menu ul li {
+	list-style: none;
+	margin-right: 60px;
+}
+
+header .menu .textmenu {
+	text-decoration: none;
+	color: white;
+	font-style: bold;
+	font-size: 20px;
+}
+
+header .menu .textmenu:hover {
+	color: #8441cc;
+	transition: 0.3s;
+}
+
+header .réseaux {
+	display: inline-flex;
+	list-style: none;
+	height: 60px;
+	margin-right: 10px;
+	align-items: center;
+}
+
+header .réseaux li {
+	margin-left: 30px;
+}
+header .réseaux li a i {
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+
+}
+/*IMAGES*/
+.photo img {
+	box-shadow: 0 0 1rem;
+}
+
+/*CONTENU*/
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 85%;
+	align-self: center;
+	background-color: white;
+	margin-top: 20px;
+	align-items: center;
+}
+.content h1 {
+	color: #542583;
+}
+.content .text_content {
+	display: block;
+	width: 80%;
+	height: auto;
+	background-color: #542583;
+	border-radius: 20px;
+}
+.content p {
+	color: white;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*CONTENT*/
+footer {
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: #542583;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	box-shadow: 0 0 0.5rem;
+	margin-top:80px;
+
+}
+footer li {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	margin: 15px;
+	font-size: 16px;
+	margin-right: 150px;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+
+}
